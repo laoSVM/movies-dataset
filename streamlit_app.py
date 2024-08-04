@@ -21,6 +21,9 @@ def load_data():
     df = pd.read_csv("data/movies_genres_summary.csv")
     return df
 
+import os
+api_key = os.getenv('TEST_SECRET')
+st.write(api_key)
 
 df = load_data()
 
